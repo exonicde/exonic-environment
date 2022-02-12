@@ -43,4 +43,4 @@ echo "Application port is '$PORT'"
 
 cat $APPS_DIR/$APPNAME/nginx.conf | sed -e "s|{{logs_dir}}|$LOGS_DIR|g" | sed -e "s|{{username}}|$USER|g" | sed -e "s|{{port}}|$PORT|g" | sed -e "s|{{apps_root}}|$APPS_DIR|g" > $NGINX_DIR/$APPNAME.conf
 eval "$NGINX_CMD"
-nohup sudo -u $USER ./exonic-gui --url "http://localhost:$PORT" --application-name "$APPNAME" --pid-location "$PIDS_DIR/$USER/$APPNAME" &
+nohup sudo -u $USER ./exonic --url "http://localhost:$PORT" --application-name "$APPNAME" --pid-location "$PIDS_DIR/$USER/$APPNAME" &
