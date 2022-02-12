@@ -1,0 +1,19 @@
+# ide
+.idea
+.vscode
+
+/apps/*
+/logs/*
+/nginx
+/ports/*
+/run/*
+!.gitkeep
+
+# environment
+exonic*
+exonic.conf
+nginx.conf
+
+# tmp
+nohup.out
+nginx.pid
