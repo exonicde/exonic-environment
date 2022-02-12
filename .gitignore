@@ -10,7 +10,7 @@
 !.gitkeep
 
 # environment
-exonic*
+exonic
 exonic.conf
 nginx.conf
 

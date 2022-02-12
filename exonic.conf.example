@@ -1,0 +1,18 @@
+# user section
+USER=`whoami`
+GROUP=`id -gn`
+
+# directories section
+EXONIC_ROOT=$(pwd)
+APPS_DIR=$EXONIC_ROOT/apps
+LOGS_DIR=$EXONIC_ROOT/logs
+PIDS_DIR=$EXONIC_ROOT/run
+
+# nginx section
+# nginx config directory
+NGINX_DIR=/etc/nginx/sites-enabled
+# nginx service file
+NGINX_CMD="/etc/init.d/nginx reload"
+# ports pool
+MIN_PORT=10000
+MAX_PORT=10100
